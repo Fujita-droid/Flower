@@ -1,0 +1,221 @@
+body{
+    width: 800px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color:rgb(114, 113, 113);
+
+
+}
+
+header{
+    height: 150px;
+    background-color:#fce8f0;
+    text-align: center;
+
+}
+
+h1{
+    /* display: inline-block; */
+    font-size: 80px;
+    font-weight: 900;
+    margin: 3px auto -10px auto;
+    text-align: center;
+    background: url(pink-daisies-2121591_1920.jpg)no-repeat center center/cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 0.1em;
+}
+
+h3{
+    margin: 0;
+    /* color: #ffe2c1; */
+    /* text-shadow: 0 0 3px gray; */
+    color:rgb(163, 162, 162);
+    letter-spacing: 0.1em;
+}
+
+div{
+    display: flex;
+    flex: 1;
+    background-color: #ecf4e3;
+}
+
+main {
+    flex: 1;
+}
+
+.items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 10px 0px;
+    grid-gap: 160px 0;
+    margin: 30px 20px;
+
+}
+
+.items img {
+    border-radius: 50%;
+}
+
+p{
+    margin: 0;
+    font-weight: bold;
+}
+
+
+.green img:hover,.blue img:hover,.skyblue img:hover,.pink img:hover, .yellow img:hover, .orange img:hover,
+.red img:hover, .purple img:hover, .white img:hover{
+    transform: translateY(-10px);
+    opacity: 50%;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    box-shadow: 0 0 10px rgba(0,0,0,2);
+    curs/or: pointer;
+
+}
+
+.red, .pink,.yellow,.orange,.purple,.white,.green,.skyblue,.blue{
+    display: inline;
+    text-align: center;
+}
+
+nav{
+    width: 150px;
+    margin-left: -20px;
+    font-size: 18px;
+}
+
+ .cont ul li{
+    list-style: none;
+    text-align: left;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  transition: box-shadow 600ms cubic-bezier(0.33, 0.11, 0.02, 0.99), 
+  transform 600ms cubic-bezier(0.33, 0.11, 0.02, 0.99);
+  /* border-radius: 10%; */
+}
+
+.cont ul li:hover {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+                /* 0 1px 6px rgba(0, 0, 0, 0.05);  */
+                /* 0 8px 8px rgba(0, 0, 0, 0.1), 
+                0 16px 16px rgba(0, 0, 0, 0.1), 
+                8px 32px 32px rgba(0, 0, 0, 0.15), 
+                8px 64px 64px rgba(0, 0, 0, 0.15); */
+    transform: scale(1.05) translateY(-0.5rem);
+    opacity: 65%;
+    border-bottom: 1px solid;
+    /* cursor: pointer; */
+
+  }
+
+aside{
+    width: 200px;
+}
+
+.side{
+    margin: 20px 10px;
+    display: block;
+}
+
+.side1{
+    padding-bottom: 20px;
+}
+
+.side1:hover,.side2:hover{
+    opacity: 70%;
+    /* cursor: pointer; */
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+
+}
+
+footer{
+    height: 150px;
+    background-color:#fce8f0;
+
+}
+
+.lastcon{
+    background-color:#fce8f0;
+}
+
+.lastcon h2{
+    margin-left: 20px;
+    margin-top: 10px;
+    color: rgb(252, 143, 252);
+}
+
+.lastcon ul {
+    text-align: right;
+    margin-left: 520px;
+    margin-top: 30px;
+}
+
+.lastcon  ul li{
+    padding-bottom: 5px;
+    list-style: none;
+    text-align: left;
+}
+
+.lastcon ul li:hover {
+    opacity: 60%;
+    /* cursor: pointer; */
+}
+
+@media only screen and (max-width:900px){
+    body,nav,aside{
+        width: 100%;
+    }
+    div{
+        flex-direction: column;
+    }
+    /* main{
+        order: -1;
+    } */
+    
+    .cont ul li{
+        display: flex;
+        float: left;
+        font-size: 14px;
+        font-weight: bold;
+        width: 20%;
+        text-align: center;
+        padding: 0 10px;
+        justify-content: space-around;
+    }
+
+    .side1{
+        display: inline-block;
+        float: left;
+        padding-right: 15px;
+        padding-left: 50px;
+    }
+
+    .lastcon ul{
+        display: flex;
+        margin-left: 10px;
+        float: left;
+        width: 300px;
+    }
+
+    .lastcon ul li{
+        padding: 0 10px;
+        text-align: center;
+        
+    }
+
+    .lastcon h2{
+        display: block;
+        border: 10px;
+        width: 100px;
+        float: left;
+    }
+
+
+}
